@@ -1,0 +1,22 @@
+/* Estilos existentes */
+.react-pdf__Page__textContent {
+    display: none;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .pdf-container {
+        width: 100%;
+        padding: 0;
+        margin-top: -20px; /* Ajusta el margen superior para subir el PDF */
+    }
+
+    .pdf-container .react-pdf__Document {
+        width: 100%; /* Asegura que el documento use todo el ancho disponible */
+    }
+
+    .pdf-container .react-pdf__Page {
+        width: 100%; /* Ajusta el ancho de la página del PDF al contenedor */
+        box-shadow: none; /* Opcional: remueve la sombra para simplificar */
+    }
+}

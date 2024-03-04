@@ -1,0 +1,75 @@
+/* AboutMeBook.css */
+.book-container {
+    width: 600px; /* Ajustado para dar más espacio al contenido */
+    height: 300px; /* Altura fija */
+    margin: 40px auto; /* Centrado en la página */
+    perspective: 1000px;
+    cursor: pointer;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-cover {
+    width: 100%;
+    min-height: 600px; /* Altura mínima para asegurar que la portada tenga un tamaño decente */
+    background-color: #6b4e3d; /* Color de la portada */
+    color: white;
+    background: url('../../src/assets/img/wp2988843-1792614001.png') no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Asegura que la portada sea el punto de referencia para el contenido */
+    border: 5px solid #5a432e; /* Añade un borde para definir mejor el libro */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+    transition: transform 1s, opacity 0.5s ease 0.5s; /* Ajusta para incluir transición de opacidad */
+}
+
+.book-content {
+    width: calc(100% - 40px); /* Ajusta el ancho para el padding */
+    max-height: 70vh; /* Ajusta la altura máxima para evitar desbordamiento */
+    overflow-y: auto; /* Permite desplazamiento si el contenido es muy largo */
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(-180deg); /* Se ajusta para que el contenido esté "detrás" inicialmente */
+    z-index: -1; /* Asegura que el contenido quede detrás de la portada hasta que se "abra" */
+    border-radius: 0 0 10px 10px; /* Redondea las esquinas inferiores */
+}
+
+.open .book-cover {
+    transform: rotateY(180deg); /* Rota completamente para que desaparezca de la vista */
+    opacity: 0; /* Hace la portada completamente transparente después de rotar */
+}
+
+.open .book-content {
+    z-index: 2; /* Trae el contenido al frente cuando el libro está "abierto" */
+    transform: rotateY(0deg); /* Ajusta para que el contenido esté directamente visible una vez abierto */
+}
+
+/* Estilos existentes */
+
+/* Añade esto al final de tu CSS */
+@media (max-width: 768px) {
+    .book-container {
+        width: 90%; /* Hace que el libro sea más ancho en dispositivos móviles */
+        height: auto; /* Ajusta la altura automáticamente basada en el contenido */
+        margin-top: 20px; /* Reduce el margen superior para pantallas más pequeñas */
+    }
+
+    .book-cover {
+        min-height: 400px; /* Reduce la altura mínima de la portada para dispositivos móviles */
+        background-size: cover; /* Asegura que la imagen de fondo cubra completamente la portada */
+    }
+
+    .book-content {
+        width: calc(100% - 20px); /* Reduce el padding en dispositivos móviles para más espacio de lectura */
+        padding: 10px; /* Ajusta el padding interior */
+        max-height: 60vh; /* Ajusta la altura máxima para una mejor visualización en dispositivos móviles */
+    }
+}

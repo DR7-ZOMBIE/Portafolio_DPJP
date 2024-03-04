@@ -1,0 +1,32 @@
+/* MatrixBackground.css */
+
+.matrix-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    z-index: -1;
+}
+
+.matrix {
+    color: green;
+    font-family: monospace;
+    white-space: nowrap;
+    animation: matrix-animation 5s infinite linear;
+    font-size: 16px;
+}
+
+@keyframes matrix-animation {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
