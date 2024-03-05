@@ -1,0 +1,42 @@
+/* Estilos generales para el navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Esconde los enlaces en pantallas pequeñas */
+    }
+
+    .navbar li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar.active ul {
+        display: flex; /* Muestra los enlaces cuando el navbar esté activo */
+    }
+}
