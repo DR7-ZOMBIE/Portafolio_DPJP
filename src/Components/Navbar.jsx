@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGhost } from '@fortawesome/free-solid-svg-icons'; // Importa el icono específico
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-800 p-4">
+        <nav className="bg-gray-800 p-4 flex justify-between items-center">
+            <span className="text-white font-bold text-xl colorful-title">  PORTAFOLIO</span>
             <ul className="flex space-x-4 justify-end">
-                
                 <li>
                     <Link className="text-white hover:text-gray-300" to="/">Home</Link>
                 </li>
@@ -21,12 +21,11 @@ const Navbar = () => {
                     <Link className="text-white hover:text-gray-300" to="/movie">Movie</Link>
                 </li>
                 <li>
-                <FontAwesomeIcon icon={faGhost} />
+                    <FontAwesomeIcon icon={faGhost} />
                 </li>
-
             </ul>
         </nav>
     );
 }
 
-export default Navbar
+export default Navbar;

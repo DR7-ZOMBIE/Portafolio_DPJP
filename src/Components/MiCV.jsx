@@ -19,7 +19,7 @@ const MiCV = () => {
 
     // Renderiza el componente
     return (
-        <div className="flex justify-center items-center mt-10">
+        <div className="flex justify-center items-center mt-3">
             <div className="mt-7 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl rounded-lg overflow-hidden max-w-xl mx-auto border-2 border-gray-300">
                 <Document
                     file={cvPDF}

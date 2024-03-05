@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes colorCycle {
+    0%, 100% {
+        color: #FF6347; /* Tomate */
+    }
+    25% {
+        color: #4682B4; /* SteelBlue */
+    }
+    50% {
+        color: #32CD32; /* LimeGreen */
+    }
+    75% {
+        color: #FFD700; /* Gold */
+    }
+}
+
+.colorful-title {
+    animation: colorCycle 10s infinite linear;
+}

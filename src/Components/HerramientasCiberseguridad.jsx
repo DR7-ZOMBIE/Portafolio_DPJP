@@ -24,13 +24,7 @@ const HerramientasCiberseguridad = () => {
             imagen: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-LFIkoYYo32Q%2FWVSqL60OuxI%2FAAAAAAAAKAM%2F8zHaJNm77NAPck0yTrgJCvFaTbH_2uc_QCLcBGAs%2Fs1600%2FNessus-Vulnerability-Scanner.jpg&f=1&nofb=1&ipt=aed4142cbd2bc5aaa1b4d6339387da0159d9951db9bf4138aa1ce6ff856a82ec&ipo=images",
             urlDocumentacion:"https://docs.tenable.com/Nessus.htm"
         },
-        {
-            id: 4,
-            titulo: "Burp Suite",
-            descripcion: "Burp Suite es una herramienta integral para la realización de pruebas de seguridad de aplicaciones web. Ofrece un conjunto de herramientas para realizar escaneos de vulnerabilidades, pruebas de penetración y ataques simulados en aplicaciones web para identificar posibles fallos de seguridad.",
-            imagen: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsecurityzines.com%2Fassets%2Fimg%2Fflyers%2Fdownloads%2Fburp.png&f=1&nofb=1&ipt=977c05d55a3683be43718c298e2cecfb63a00f56f6055a03fb4a61129792f250&ipo=images",
-            urlDocumentacion:"https://portswigger.net/burp/documentation"
-        },
+        
         // Agrega más herramientas aquí
     ];
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardCarousel = ({ titulo, descripcion, imagen, urlDocumentacion }) => {
     return (
-        <div className="box-shadow: 0 25px 50px -12px rgb(0 0 0 / 2.5)  bg-black hover:bg-black text-justify mt-12 max-w-sm mx-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-transform duration-500 overflow-hidden">
+        <div className="box-shadow: 0 25px 50px -12px rgb(0 0 0 / 2.5)  bg-black hover:bg-black text-justify max-w-sm mx-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-transform duration-500 overflow-hidden">
             {imagen && (
                 <img className="rounded-t-lg w-full h-48 object-cover" src={imagen} alt="" />
             )}
