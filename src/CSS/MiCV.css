@@ -3,6 +3,12 @@
     display: none;
 }
 
+.pdf-container {
+    margin-top: -4rem; /* Reduce el margen superior */
+    padding-top: 0; /* Opcional: Ajusta el relleno superior si es necesario */
+}
+
+
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
     .pdf-container {

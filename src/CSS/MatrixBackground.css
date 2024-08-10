@@ -17,7 +17,7 @@
     color: green;
     font-family: monospace;
     white-space: nowrap;
-    animation: matrix-animation 900s infinite linear;
+    animation: matrix-animation 4000s infinite linear;
     font-size: 20px;
 }
 
